@@ -42,6 +42,7 @@ accuracies = []
 starting_k = 1
 ending_k   = 75
 
+# Test for multiple values of k
 for k in range(starting_k,ending_k):
     # Create model
     knn = neighbors.KNeighborsClassifier(n_neighbors=k, weights='uniform')
